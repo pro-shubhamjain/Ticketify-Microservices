@@ -1,6 +1,6 @@
 {
   "name": "@codehelp/common",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "del && ./build/*",
-    "build": "npm run clean && tsc",
+    "build": "npm run  tsc",
     "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
   },
   "keywords": [],
