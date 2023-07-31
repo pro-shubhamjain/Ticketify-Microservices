@@ -1,6 +1,6 @@
 {
   "name": "@codehelp/common",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "clean": "rmdir /s /q build",
+    "tsc": "tsc -p tsconfig.json",
     "build": "npm run tsc",
     "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
   },
@@ -17,7 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "del-cli": "^5.0.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "@types/cookie-session": "^2.0.44",
