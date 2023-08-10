@@ -7,10 +7,11 @@ import { currentUserRouter } from './routes/current-user';
 import { signinRouter } from './routes/signin';
 import { signoutRouter } from './routes/signout';
 import { signupRouter } from './routes/signup';
-import { errorHandler } from './middlewares/error-handler';
-import { NotFoundError } from './errors/not-found-error';
+import { errorHandler } from '@codehelp/common';
+import { NotFoundError } from '@codehelp/common';
 
 const app = express();
+////set JWT_KEY=123test &&
 app.set('trust proxy', true);
 app.use(json());
 app.use(
